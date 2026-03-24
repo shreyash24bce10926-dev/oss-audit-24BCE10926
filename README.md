@@ -4,7 +4,7 @@ a set of 5 bash scripts written to audit VLC media player as part of the open so
 
 ---
 
-## student info
+## Student info
 
 | Field | Details |
 |---|---|
