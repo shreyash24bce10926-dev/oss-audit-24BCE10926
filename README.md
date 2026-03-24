@@ -1,1 +1,84 @@
-# oss-audit-24BCE10926
+# Open Source Software Project
+
+a set of 5 bash scripts written to audit VLC media player as part of the open source software course assignment.
+
+---
+
+## student info
+
+| field | details |
+|---|---|
+| name | Shreyash Yadav |
+| roll number | *24BCE10926* |
+| course | Open Source Software |
+| software audited | VLC Media Player |
+
+---
+
+## what this project does
+
+basically these scripts check different things about VLC - whether its installed, how much ram/cpu it uses, where its config files are, and stuff like that. each script handles one part of the audit and can be run on its own.
+
+---
+
+## scripts
+
+**`script1.sh` - identity audit**
+checks who is running the script, the current working directory, and system uptime. just makes sure the environment is fine before starting the audit.
+
+**`script2.sh` - FOSS package inspector**
+checks if VLC is installed, then pulls info like version number and maintainer from the package manager. also has a short note on what open source means.
+
+**`script3.sh` - performance and config**
+looks at VLC's live RAM and CPU usage and checks the permissions on VLC's config folder.
+
+**`script4.sh` - automated backup**
+finds `.conf` and `.txt` config files related to VLC, copies them to a staging folder, and zips everything into a `.tar.gz` archive.
+
+**`script5.sh` - manifesto generator**
+an interactive script - it asks for your input and generates a small "open source manifesto" text file based on what you type.
+
+---
+
+## requirements
+
+- linux (ubuntu, debian, or WSL)
+- bash shell
+- `vlc` installed
+- `dpkg` (comes default on ubuntu/debian)
+- `tar` and `gzip` (for script 4)
+
+to install VLC:
+```bash
+sudo apt update && sudo apt install vlc -y
+```
+
+---
+
+## how to run
+
+**1. clone the repo**
+```bash
+git clone https://github.com/[your-username]/oss-audit-[rollnumber].git
+cd oss-audit-[rollnumber]
+```
+
+**2. make scripts executable**
+```bash
+chmod +x *.sh
+```
+
+**3. run each script**
+```bash
+./script1.sh   # identity check
+./script2.sh   # VLC package info
+./script3.sh   # resource + config audit
+./script4.sh   # backup config files
+./script5.sh   # generate manifesto
+```
+
+---
+
+## reflection
+
+this project helped understand how open source software actually works under the hood. VLC is lightweight, transparent, and everything about it - version, maintainer, config files - is accessible without any special access. that's what makes open source different from proprietary software.
