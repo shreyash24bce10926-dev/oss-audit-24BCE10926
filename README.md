@@ -6,22 +6,22 @@ a set of 5 bash scripts written to audit VLC media player as part of the open so
 
 ## student info
 
-| field | details |
+| Field | Details |
 |---|---|
-| name | Shreyash Yadav |
-| roll number | *24BCE10926* |
-| course | Open Source Software |
-| software audited | VLC Media Player |
+| Name | Shreyash Yadav |
+| Roll number | *24BCE10926* |
+| Course | Open Source Software |
+| Software Sudited | VLC Media Player |
 
 ---
 
-## what this project does
+## What this project does
 
 basically these scripts check different things about VLC - whether its installed, how much ram/cpu it uses, where its config files are, and stuff like that. each script handles one part of the audit and can be run on its own.
 
 ---
 
-## scripts
+## Scripts
 
 **`script1.sh` - identity audit**
 checks who is running the script, the current working directory, and system uptime. just makes sure the environment is fine before starting the audit.
@@ -40,7 +40,7 @@ an interactive script - it asks for your input and generates a small "open sourc
 
 ---
 
-## requirements
+## Requirements
 
 - linux (ubuntu, debian, or WSL)
 - bash shell
@@ -79,6 +79,6 @@ chmod +x *.sh
 
 ---
 
-## reflection
+## Reflection
 
 this project helped understand how open source software actually works under the hood. VLC is lightweight, transparent, and everything about it - version, maintainer, config files - is accessible without any special access. that's what makes open source different from proprietary software.
