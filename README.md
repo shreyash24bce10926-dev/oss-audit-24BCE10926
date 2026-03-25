@@ -1,6 +1,6 @@
 # Open Source Software Project
 
-a set of 5 bash scripts written to audit VLC media player as part of the open source software course assignment.
+a set of 5 bash scripts written to audit VLC media player as part of the open source software course asignment.
 
 ---
 
@@ -17,26 +17,26 @@ a set of 5 bash scripts written to audit VLC media player as part of the open so
 
 ## What this project does
 
-basically these scripts check different things about VLC - whether its installed, how much ram/cpu it uses, where its config files are, and stuff like that. each script handles one part of the audit and can be run on its own.
+basically these scripts check different things about VLC - whether its installed, how much ram/cpu it uses, where its config files are, and stuff like that. each script handles one part of the audit and could surely be run on its own.
 
 ---
 
 ## Scripts
 
 **`script1.sh` - identity audit**
-checks who is running the script, the current working directory, and system uptime. just makes sure the environment is fine before starting the audit.
+checks who is running the script, the current working directory, and system uptime just makes sure the environment is fine before starting the audit.
 
 **`script2.sh` - FOSS package inspector**
-checks if VLC is installed, then pulls info like version number and maintainer from the package manager. also has a short note on what open source means.
+checks if VLC is installed, then pulls info like version no. and maintainer from the package manager. also has a short note on what open source means.
 
-**`script3.sh` - performance and config**
-looks at VLC's live RAM and CPU usage and checks the permissions on VLC's config folder.
+**`script3.sh` - performance nd config**
+looks at VLC's live RAM and CPU usage and check the permissions on VLC's config folder.
 
 **`script4.sh` - automated backup**
 finds `.conf` and `.txt` config files related to VLC, copies them to a staging folder, and zips everything into a `.tar.gz` archive.
 
 **`script5.sh` - manifesto generator**
-an interactive script - it asks for your input and generates a small "open source manifesto" text file based on what you type.
+an interactive script - it asks for your input and generates a small "open source manifesto" text file based on wha you type.
 
 ---
 
@@ -81,4 +81,4 @@ chmod +x *.sh
 
 ## Reflection
 
-this project helped understand how open source software actually works under the hood. VLC is lightweight, transparent, and everything about it - version, maintainer, config files - is accessible without any special access. that's what makes open source different from proprietary software.
+this project helped understand how open source software actually works.. VLC is lightweight, transparent, and everything about it - version, maintainer, config files - is accessible without any special access. that's what makes open source different from proprietary software.
